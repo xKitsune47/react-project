@@ -1,0 +1,16 @@
+.player__list {
+    grid-row-start: 2;
+    grid-column-start: 2;
+
+    grid-row-end: 3;
+    grid-column-end: 3;
+    text-align: center;
+}
+
+.player__list--player {
+    padding: 2rem;
+}
+
+.player__list--active {
+    background-color: greenyellow;
+}

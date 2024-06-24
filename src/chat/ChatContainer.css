@@ -1,0 +1,62 @@
+.chat__container {
+    grid-row-start: 2;
+    grid-column-start: 1;
+
+    grid-row-end: 3;
+    grid-column-end: 2;
+
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+        width: 0.5em;
+        height: 0.5em;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 3px;
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+    }
+}
+
+.chat--chat__bubble {
+    position: relative;
+    padding: 1rem;
+    border: solid 1px black;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.chat--chat__bubble--name {
+    color: grey;
+}
+
+.chat--chat__bubble--question {
+    padding: 1rem;
+    width: 60%;
+}
+
+.chat--chat__bubble--votes {
+    position: absolute;
+    bottom: -15%;
+    right: 5%;
+}
+
+.chat--chat__bubble--vote {
+    padding: 0.4rem;
+    border: solid 1px black;
+}
+
+.chat--chat__bubble--yea {
+    background-color: greenyellow;
+    border-radius: 8px 0 0 8px;
+}
+
+.chat--chat__bubble--nay {
+    background-color: red;
+    border-radius: 0 8px 8px 0;
+}
